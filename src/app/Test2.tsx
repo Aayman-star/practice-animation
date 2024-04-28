@@ -14,29 +14,37 @@ const Test2 = () => {
     }
   }, [isInView]);
   return (
-    <div
-      ref={ref}
-      className="bg-yellow-300 w-full h-screen grid place-content-center md:max-w-7xl mx-auto ">
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, scale: 0, x: -100, y: -100 },
-          visible: { opacity: 1, scale: 1, x: 0, y: 0 },
-        }}
-        initial="hidden"
-        animate={control2}
-        transition={{ duration: 1, delay: 0.5 }}
+    <div className="bg-slate-900 w-full h-screen grid place-content-center md:max-w-7xl mx-auto ">
+      <div
+        ref={ref}
         className="flex flex-col space-y-10 md:flex-row md:items-center md:space-x-10 md:space-y-0">
-        <div className="w-52 h-40 border-2 border-fuchsia-700 rounded-md grid place-content-center">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, scale: 0, x: -100, y: -100 },
+            visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+          }}
+          initial="hidden"
+          animate={control2}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-52 h-40 border-2 border-fuchsia-700 rounded-md grid place-content-center">
           <p className="p-2 font-light shadow-md shadow-emerald-600">
             This is another div
           </p>
-        </div>
-        <div className="w-52 h-40 border-2 border-fuchsia-700 rounded-md grid place-content-center">
+        </motion.div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, scale: 0, x: -100, y: -100 },
+            visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+          }}
+          initial="hidden"
+          animate={control2}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-52 h-40 border-2 border-fuchsia-700 rounded-md grid place-content-center">
           <p className="p-2 font-light shadow-md shadow-emerald-600">
             This is another div
           </p>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 };
