@@ -31,7 +31,7 @@ const Test = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className=" border-2 border-pink-400 p-10 rounded-md">
           {" "}
-          <p className="text-2xl">This is another div</p>
+          <p className="text-2xl text-zinc-50">This is another div</p>
         </motion.div>
         <motion.div
           variants={{
@@ -43,7 +43,7 @@ const Test = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className=" border-2 border-pink-400 p-10 rounded-md">
           {" "}
-          <p className="text-2xl">This is another div</p>
+          <p className="text-2xl text-zinc-50">This is another div</p>
         </motion.div>
       </div>
     </div>

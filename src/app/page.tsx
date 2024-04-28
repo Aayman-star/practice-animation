@@ -32,7 +32,7 @@ const FirstDiv = () => {
     <div className=" bg-stone-900 flex p-10 flex-col items-center space-y-4 md:max-w-7xl mx-auto">
       <div>
         {" "}
-        <h2 className="text-2xl md:text-3xl font-bold">
+        <h2 className="text-2xl text-stone-50 md:text-3xl font-bold">
           Testing Framer motion
         </h2>
       </div>
@@ -53,7 +53,7 @@ const FirstDiv = () => {
             animate={controls}
             transition={{ duration: 1, delay: 0.25 }}
             className="w-40 h-40 bg-red-500 rounded-md md:w-[400px] md:h-[400px] p-2 grid place-content-center">
-            <p>This is one child div</p>
+            <p className="text-stone-50">This is one child div</p>
           </motion.div>
           <motion.div
             variants={{
@@ -68,7 +68,7 @@ const FirstDiv = () => {
             animate={controls}
             transition={{ duration: 1, delay: 0.25 }}
             className="w-40 h-40 bg-green-500 rounded-md p-2 md:w-[400px] md:h-[400px] grid place-content-center">
-            <p>This is second child div</p>
+            <p className="text-stone-50">This is second child div</p>
           </motion.div>
         </div>
       </div>

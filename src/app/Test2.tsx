@@ -27,7 +27,7 @@ const Test2 = () => {
           animate={control2}
           transition={{ duration: 1, delay: 0.5 }}
           className="w-52 h-40 border-2 border-fuchsia-700 rounded-md grid place-content-center">
-          <p className="p-2 font-light shadow-md shadow-emerald-600">
+          <p className="p-2 font-light shadow-md shadow-emerald-600 text-slate-50">
             This is another div
           </p>
         </motion.div>
@@ -40,7 +40,7 @@ const Test2 = () => {
           animate={control2}
           transition={{ duration: 1, delay: 0.5 }}
           className="w-52 h-40 border-2 border-fuchsia-700 rounded-md grid place-content-center">
-          <p className="p-2 font-light shadow-md shadow-emerald-600">
+          <p className="text-slate-50 p-2 font-light shadow-md shadow-emerald-600">
             This is another div
           </p>
         </motion.div>
